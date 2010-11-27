@@ -573,11 +573,11 @@ static VALUE Krb5_close(VALUE self)
 /*
  * = Ruby bindings for kerberos
  *
- * The module Krb5Auth provides bindings to kerberos version 5 libraries
+ * The module Krb5 provides bindings to kerberos version 5 libraries
  */
-void Init_krb5_auth()
+void Init_krb5()
 {
-  mKerberos = rb_define_module("Krb5Auth");
+  mKerberos = rb_define_module("Krb5");
 
   cKrb5 = rb_define_class_under(mKerberos,"Krb5", rb_cObject);
 
